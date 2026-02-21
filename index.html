@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Visibility Toggle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./Passward.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Visibility Toggle</h1>
+        <p class="subtitle">Click the eye icon to show/hide password text</p>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-wrapper">
+                <input type="password" id="password" placeholder="Enter your password">
+                <button class="toggle-btn" id="togglePassword" aria-label="Toggle password visibility">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+            <div class="password-strength">
+                <span class="strength-text">Strength:</span>
+                <div class="strength-bar">
+                    <div class="strength-fill" id="strengthFill"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="input-wrapper">
+                <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+                <button class="toggle-btn" id="toggleConfirmPassword" aria-label="Toggle password visibility">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+            <p id="matchMessage" class="hint">Passwords must match</p>
+        </div>
+        
+        <!-- <div class="examples">
+            <h3>Try with different input types</h3>
+            
+            <div class="example-item">
+                <div class="example-label">Email with password:</div>
+                <div class="example-input">
+                    <input type="password" id="exampleEmail" placeholder="email@example.com" value="email@example.com">
+                    <button class="toggle-btn example-toggle" aria-label="Toggle password visibility">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+             -->
+            <!-- <div class="example-item">
+                <div class="example-label">PIN code:</div>
+                <div class="example-input">
+                    <input type="password" id="examplePin" placeholder="4-digit PIN" value="1234">
+                    <button class="toggle-btn example-toggle" aria-label="Toggle password visibility" >
+                        <i class="fas fa-eye"></i>   
+                    </button>
+                </div>
+            </div>
+        </div> -->
+        
+        <footer>
+            <p>Click the eye icon (<i class="fas fa-eye"></i>) to toggle password visibility</p>
+        </footer>
+    </div>
+</body>
+<script src="./Passward.js"></script>
+</html>
